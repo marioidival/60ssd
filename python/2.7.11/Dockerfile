@@ -8,7 +8,6 @@ ENV PYTHON_VERSION 2.7.11
 
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
 ENV PYTHON_PIP_VERSION 8.1.1
-RUN apk update
 
 RUN set -ex \
 	&& apk add --no-cache --virtual .fetch-deps curl gnupg \
